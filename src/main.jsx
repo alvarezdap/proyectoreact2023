@@ -13,8 +13,6 @@ import "./App1.css"
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <Routes>
