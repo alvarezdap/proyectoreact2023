@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from "axios"
-import "./App.css"
+import "./App1.css"
 import Cripto from "./Cripto"
 
 function App() {
@@ -38,7 +38,7 @@ if (!criptos) return <span>Cargando...</span>
     <div className='cripto-container'>
     { 
       criptos.map(({id, name, priceUsd, symbol,changePercent24Hr}) => (
-        <Cripto key={id} name={name} priceUsd={priceUsd} symbol={symbol} changePercent24Hr={changePercent24Hr} />
+        <Cripto key={id} name={name} priceUsd={priceUsd} symbol={symbol} changePercent24Hr={changePercent24Hr} id={id} />
       ))
     }
     </div>
